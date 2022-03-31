@@ -11,7 +11,11 @@ const useFetch = (endpoint) => {
 
     setIsLoading(true)
     try {
-      const response = await fetch(endpoint)
+      const response = await fetch(endpoint, {
+                                        headers : {
+                                          'Authorization' : import.meta.env.VITE_API_KEY,
+                                        } 
+                                      })
                         
       const data     = await response.json()
       setInfo(data)
