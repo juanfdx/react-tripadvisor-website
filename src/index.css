@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300&display=swap');
+
+/* custom properties */
+:root{
+  /* --color-secundario #f0f0f0; */
+  --color-primario   : #181A1B;
+  --color-secundario : #FFFFFF;
+  --color-bg-search  : #EAFAF4;
+  --color-border-btn : #181A1B;
+  --color-bot-header : #e0e0e0;
+  --color-hover-nav  : rgb(223, 223, 223);
+  --color-bg-slider  : #f0e5e0;
+  --color-sl-profile : #333;
+  --color-border-sh  : #cecece;
+  --color-hover-selc : #e0e0e0;
+  --color-footer-top : #333;
+  --color-footer-a   : #333333;
+  --color-sl-small-p : #5c5c5c;
+  --color-subnav     : #333;
+  --color-check-btn  : #F4B227;
+  --color-check-hov  : #ffc72e;
+  --color-heart-btn  : #FFCCCC;
+  --color-cancel-btn : #004f32;
+  --color-cancel-bak : #c9f2e3;
+  --color-ckout-bord : #e0e0e0;
+  --color-degradado1 : rgba(255,255,255, 1);
+  --color-degradado2 : rgba(255,255,255, .8);
+  --color-degradado3 : rgba(255,255,255, .7);
+  --color-degradado4 : rgba(255,255,255, .6);
+  --color-degradado5 : rgba(255,255,255, .5);
+  --color-degradado6 : rgba(255,255,255, .4);
+
+
+  /* tipografía */
+  --tipo-principal   : Poppins, sans-serif;
+  /* --tipo-principal   : Trip Sans VF, Trip Sans, Helvetica, Arial, sans-serif; */
+  --tipo-secundaria  : Verdana;
+}
+  
+/* modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root{
+    --color-primario   : #f0f0f0;
+    --color-secundario : #181A1B; 
+    --color-bg-search  : #0D362A; 
+    --color-border-btn : #8C8273;
+    --color-bot-header : #393d40;
+    --color-hover-nav  : #141516;
+    --color-bg-slider  : #33190E;
+    --color-sl-profile : #f0f0f0;
+    --color-border-sh  : #393D40;
+    --color-hover-selc : #232323;
+    --color-footer-top : rgb(187, 187, 187);
+    --color-footer-a   : #cccccc;
+    --color-sl-small-p : #9F9D97;
+    --color-subnav     : #9F9D97;
+    --color-check-btn  : #C28E02;
+    --color-check-hov  : #8b6600;
+    --color-heart-btn  : #520000;
+    --color-cancel-btn : #c9f2e3;
+    --color-cancel-bak : #004f32;
+    --color-ckout-bord : #000000;
+    --color-degradado1 : rgba(24,26,27, 1);
+    --color-degradado2 : rgba(24,26,27, .8);
+    --color-degradado3 : rgba(24,26,27, .7);
+    --color-degradado4 : rgba(24,26,27, .6);
+    --color-degradado5 : rgba(24,26,27, .5);
+    --color-degradado6 : rgba(24,26,27, .4);
+  }
+}
+
+/* Opcional */
+/* modo alto contraste. (WD) */
+@media (prefers-contrast: high){
+    :root{
+      --color-primario   : black;
+      --color-secundario : white; 
+    }
+}
+
+/* Opcional */
+/* modo sin animation */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none;
+    transition: none;
+  }
+}
+
+
+
+/* Reseteamos los margin y paddings de todas las etiquetas */
+/* Cuidado con el uso del *. Normalmente se se debe de usar en selectores al maquetar. Pero usar alguno para resetear y evitarnos problemas no es mala opción. Tú eliges. */
+
+/* 
+Puedes elegir usar: *{}
+Puedes elegir usar esto: 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video , button, button{}
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video , button, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Evitamos problemas con las imagenes */
+img , picture , video , iframe , figure{
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* opcional */ object-fit: cover;        
+  /* opcional */ object-position: center center;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+}
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1 , h2 , h3 , h4 , h5 , h6 , p ,span , a , strong , blockquote , i , b , u , em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color:inherit;
+}
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* Configuramos el texto que seleccionamos */
+::selection {
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form , input, textarea, select , button , label{
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color:inherit;
+    /* opcional */ appearance: none;
+}
+
+/* Reseteamos las tablas */
+table , tr , td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg{
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+/* (Probándolo, no usar en producción) En el caso de añadir una  */
+/* p svg{
+  display: inline;
+  width: initial;
+} */
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height  : 100vh;
+  font-size   : 100%;
+  font-family : var(--tipo-principal);
+  color       : var(--color-primario);
+  background-color: var(--color-secundario);
+  /* opcional */ line-height: 1.4em;
+  /* opcional */ hyphens: auto;
+  /* opcional */ font-smooth: always;
+  /* opcional */ -webkit-font-smoothing: antialiased;
+  /* opcional */ -moz-osx-font-smoothing: grayscale;
+}

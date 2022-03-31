@@ -1,0 +1,64 @@
+
+.section-labelvotes {
+  width: 100%;
+}
+
+.labelvotes-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1.2rem;
+  line-height: 22px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.labelvotes-box {
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.labelvotes-svg {
+  color: #00AB70;
+}
+
+.labelvotes-span-votes {
+  margin-left: 8px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: var(--color-subnav);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.labelvotes-span-votes::after {
+  content: '•';
+  margin: 0 8px;
+  font-weight: bolder;
+}
+
+.labelvotes-link-a {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: var(--color-subnav);
+  text-decoration: underline;
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (min-width: 768px) {
+  
+  .labelvotes-wrapper {
+    line-height: normal;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

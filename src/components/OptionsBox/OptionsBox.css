@@ -1,0 +1,81 @@
+
+/* ----- OPTIONS NO SLIDER ----- */
+
+.options-box {
+  width: 100%;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  transition: all .5s ease;
+}
+
+.options-item {
+  width: calc(25% - 8px);
+  height: 72px;
+  margin: .2rem;
+  padding: 11px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border-btn);
+  overflow: hidden;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.options-item:hover{
+  background-color: black; 
+}
+
+.options-item:hover > span{
+  color: white; 
+}
+
+.options-svg {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  color: var(--color-primario);
+}
+
+.options-text {
+  font-size: 15px;
+  font-weight: 600;
+  /* letter-spacing: 1px; */
+  color: var(--color-primario);
+}
+
+
+
+/* ----- MEDIA QUERIES ----- */
+
+
+
+@media (max-width: 768px) {
+
+  .options-box {
+    display: none;
+  }
+
+}
+
+
+@media (min-width: 1210px) {
+  
+  .options-item {
+    width: 182px;
+    margin: .25rem .28rem;
+  }
+/*  */
+  .options-item:nth-child(6) {
+    display: none;
+  }
+
+  .options-item:nth-child(7) {
+    display: none;
+  }
+}

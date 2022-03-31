@@ -1,0 +1,83 @@
+
+.section-elementTitle {
+  width: 100%;
+}
+
+.elementTitle-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 1.2rem .8rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.elementTitle-title {
+  margin-right: 10px;
+}
+
+.elementTitle-title-h1 {
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 50px;
+  hyphens: none;
+}
+
+.elementTitle-buttons-box {
+  min-width:100px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.elementTitle-mail-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--color-primario);
+  border: 2px solid var(--color-border-btn);
+  cursor: pointer;
+}
+
+.elementTitle-mail-btn:hover {
+  color: var(--color-secundario);
+  background-color: var(--color-primario);
+}
+
+.elementTitle-heart-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--color-primario);
+  border: 2px solid var(--color-border-btn);
+  cursor: pointer;
+}
+
+.elementTitle-heart-btn:hover {
+  color: var(--color-secundario);
+  background-color: var(--color-primario);
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (max-width: 767px) {
+
+  .elementTitle-wrapper {
+    padding: .4rem 1.2rem .5rem;
+  }
+  
+  .elementTitle-buttons-box {
+    display: none;
+  }
+
+  .elementTitle-title-h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+}

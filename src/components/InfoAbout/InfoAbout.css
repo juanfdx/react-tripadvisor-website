@@ -1,0 +1,240 @@
+
+.section-info-about {
+  width: 100%;
+}
+
+.info-about-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.7rem 1.2rem;
+}
+
+.info-about-h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--color-primario);
+  hyphens: none;
+}
+
+.info-about-h3 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 19px;
+  margin-bottom: 8px;
+  hyphens: none;
+  color: var(--color-primario);
+}
+
+.info-about-h3.span {
+  margin-bottom: 0;
+}
+
+.info-about-h3.lang {
+  margin-bottom: 4px;
+}
+
+.info-about-h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-primario);
+}
+
+.info-about-h2.feat {
+  margin-bottom: 18px;
+} 
+
+.info-about-p {
+  font-size: 15px;
+  color: var(--color-subnav);
+  line-height: 22px;
+  hyphens: none;
+}
+
+.info-about-p.year {
+  font-size: 15px;
+}
+
+.info-about-p.feat {
+  margin-bottom: 18px;
+}
+
+.info-about-p.pre {
+  white-space: pre-line;
+
+}
+
+.info-about-span {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-subnav);
+  
+}
+
+.info-about-text-box {
+  padding-bottom: 4px;
+}
+
+.info-about-text-col2 {
+  min-width: 205px;
+}
+
+.info-about-info-politics-box {
+  margin-top: 20px;
+}
+
+.info-about-info {
+  width: 100%;
+}
+
+.info-about-politics {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* --- AWARDS --- */
+
+.info-about-awards {
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.info-about-awards.hide {
+  display: none;
+}
+
+.info-awards-stamp-box {
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-awards-stamp-svg {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  min-height: 38px;
+  background-color: #F4B227;
+  border-radius: 50%;
+  color: var(--color-primario);
+}
+
+.info-awards-text-span-box {
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* --- o --- */
+
+
+.info-about-languages {
+  margin-bottom: 20px;
+}
+
+.info-about-languages-div {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-primario);
+  line-height: 21px;
+}
+
+
+.info-about-p.li {
+  display: inline;
+  vertical-align: middle;
+}
+
+.info-about-featured-ul {
+  margin-bottom: 20px;
+}
+
+
+.info-about-featured-li {
+  line-height: 25px;
+  /* flex para que el salto de linea del "p" no se meta debajo del "•" */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.info-about-featured-li::before {
+  content:"•"; 
+  font-size:17px;
+  padding-right: 12px;
+  vertical-align: middle;  
+}
+
+.info-about-readmore-btn {
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.info-about-btn {
+  width: 100%;
+  margin-top: 24px;
+  padding: 12px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primario);
+  border: 2px solid var(--color-border-btn);
+  border-radius: 24px;
+}
+
+.info-about-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (min-width: 768px) {
+
+  .info-about-text-box {
+    padding-bottom: 0px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  
+  .info-about-info-politics-box {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .info-about-info {
+    width: 50%;
+  }
+
+  .info-about-politics {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .info-about-awards {
+    margin-top: 0;
+  }
+
+  .info-about-btn {
+    width: auto;
+  }
+}
+

@@ -1,0 +1,189 @@
+
+
+.section-slider {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.section-slider.bg-type3 {
+  background-color: var(--color-bg-slider);
+}
+
+.slider-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 .6rem;
+}
+
+
+/* ----- SLIDER HEADER ----- */
+
+.slider-header {
+  width: 100%;
+  padding: 1rem .6rem;
+  margin-bottom: .4rem;
+}
+
+.slider-header-h2 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 29px;
+  color: var(--color-primario);
+}
+
+
+/* ----- SLIDER ----- */
+
+.slider-mask {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* ----- BTN SLIDER TIPO 1 Y 2 con top : btnTop ----- */
+
+.slider-btn {
+  position: absolute;
+  /* top: 30%;
+  transform: translate(0, -50%); */
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--color-border-btn);
+  border-radius: 25px;
+  padding: 6px;
+  color: var(--color-primario);
+  background-color: var(--color-secundario);
+  cursor: pointer;
+  z-index: 2;
+  /* transition: all .5s ease; */
+  display: none;
+}
+
+.slider-btn:hover {
+  color: var(--color-secundario);
+  background-color: var(--color-primario);
+}
+
+.slider-btn.prev {
+  left: 0px;
+}
+
+.slider-btn.next {
+  right: 0px;
+}
+
+.slider-btn.hide {
+  visibility: hidden;
+}
+
+.slider-btn.show {
+  display: block;
+}
+
+
+/* ----- BTN SLIDER TIPO 3 ----- */
+
+.slider-btn-t3 {
+  position: absolute;
+  top: 48%;
+  transform: translate(0, -50%);
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--color-border-btn);
+  border-radius: 25px;
+  padding: 6px;
+  color: var(--color-primario);
+  background-color: var(--color-secundario);
+  cursor: pointer;
+  z-index: 2;
+  transition: all .5s ease;
+  display: none;
+}
+
+.slider-btn-t3:hover {
+  color: var(--color-secundario);
+  background-color: var(--color-primario);
+}
+
+.slider-btn-t3.prev {
+  left: 0px;
+}
+
+.slider-btn-t3.next {
+  right: 0px;
+}
+
+.slider-btn-t3.hide {
+  visibility: hidden;
+}
+
+.slider-btn-t3.show {
+  display: block;
+}
+
+
+/* ----- SLIDER SLIDE ----- */
+
+.slider-slide {
+  width: 200%;
+  padding: 0 .3rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  /* transition: all .5s ease; */
+}
+
+.transition {
+  transition: all .5s ease;
+} 
+
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (max-width: 768px) {
+  
+  .slider-btn {
+    top: 34%;
+  }
+
+  .slider-header {
+    padding: 1rem 0.3rem;
+  }
+
+  .slider-slide {
+    padding: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  
+  .slider-btn {
+    top: 31%;
+  }
+}
+
+@media (max-width: 512px) {
+  
+  .slider-btn {
+    top: 37%;
+  }
+ 
+  .slider-header {
+    padding: 1rem 0;
+  }
+
+  .slider-slide {
+    padding: 0;
+  }
+}
+
+@media (max-width: 390px) {
+  
+  .slider-btn {
+    top: 33%;
+  }
+}

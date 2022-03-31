@@ -1,0 +1,269 @@
+
+.checkout {
+  width: 35%;
+  min-width: 275px;
+}
+
+.checkout-card {
+  max-width: 374px;
+  width: 100%;
+  height: 100%;
+  padding: 32px 24px;
+  border-radius: 12px;
+  border: 2px solid var(--color-ckout-bord);
+}
+
+.checkout-content {
+  width: 100%;
+}
+
+.checkout-swap-box {
+  width: 100%;
+}
+
+.checkout-date-people {
+  margin-bottom: 24px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout-date-btn {
+  width: 100%;
+  height: 48px;
+  margin-right: 10px;
+  padding: 0 16px;
+  border-radius: 24px;
+  border: 2px solid var(--color-bot-header);
+  cursor: pointer;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.checkout-date-btn-svg {
+  width: 18px;
+  height: 18px;
+}
+
+.checkout-date-btn-p {
+  height: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 4px;
+  color: var(--color-primario);
+}
+
+.checkout-people {
+  min-width: 65px;
+  height: 48px;
+  border-radius: 24px;
+  border: 2px solid var(--color-bot-header);
+  cursor: pointer;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-people-svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-primario);
+}
+
+.checkout-people-p {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-primario);
+  margin-left: 4px;
+  height: 16px;
+}
+
+.checkout-info {
+  width: 100%;
+  margin-bottom: 24px;
+
+  display: flex;
+  gap: 10px;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.checkout-info-h3 {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 19px;
+  color: var(--color-primario);
+
+}
+.checkout-info-p {
+  width: 100%;
+  font-size: 15px;
+  text-align: right;
+  line-height: 22px;
+  color: var(--color-subnav);
+}
+
+.checkout-info-p-span {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-primario);
+}
+
+.checkout-info-p-span2 {
+  hyphens: none;
+}
+
+.checkout-btn {
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 17px 24px;
+  color: var(--color-primario);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  background-color: var(--color-check-btn);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.checkout-btn:hover {
+  background-color: var(--color-check-hov);
+}
+
+.checkout-msg-p {
+  width: 100%;
+  hyphens: none;
+  font-size: 14.5px;
+  line-height: 22px;
+  color: var(--color-subnav);
+}
+
+.checkout-msg-btn {
+  display: inline;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--color-subnav);
+}
+
+.checkout-recomended {
+  margin-bottom: 17px;
+  width: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.checkout-recomended.last {
+  margin-bottom: 0;
+} 
+
+.checkout-recomended-svg {
+  min-width: 29px;
+  height: 29px;
+  margin-right: 8px;
+  padding-top: 1px;
+  border-radius: 50%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-recomended-svg.heart {
+  color: #FF5C5D;
+  background-color: var(--color-heart-btn);
+}
+
+.checkout-recomended-svg.pay {
+  color: #FF5C5D;
+  background-color: var(--color-heart-btn);
+}
+
+.checkout-recomended-svg.cancel {
+  color: var(--color-cancel-btn);
+  background-color: var(--color-cancel-bak);
+}
+
+.checkout-recomended-p {
+  width: 100%;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--color-subnav);
+  hyphens: none;
+}
+
+.checkout-recomended-span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
+  cursor: pointer;
+  color: var(--color-subnav);
+}
+
+.checkout-recomended-span-svg {
+  padding-top: 7px;
+  width: 18px;
+  height: 17px;
+}
+
+.checkout-tip {
+  width: 100%;
+  padding: 16px 24px 0;
+}
+
+.checkout-tip-p {
+  width: 100%;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--color-subnav);
+  hyphens: none;
+}
+
+/* tripadvisor modificó su web y quitó este elemento */
+.checkout-tip.hide-for-version {
+  display: none;
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (max-width: 767px) {
+
+  .checkout {
+    width: 100%; 
+  }
+
+  .checkout-card {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    padding: 32px 24px 5px;
+  }
+
+  .checkout-swap-box {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .checkout-date-people {
+    margin-bottom: 25px;
+  }
+}

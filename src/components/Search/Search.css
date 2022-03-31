@@ -1,0 +1,153 @@
+
+.section-search {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.search-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1.2rem .5rem;
+}
+
+
+/* ----- IMAGEN ----- */
+
+.search-picture {
+  position: relative;
+  width: 100%;
+  height: 348px;
+  background-color: var(--color-bg-search);
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+}
+
+
+/* ----- FORMULARIO ----- */
+
+.search-form-box {
+  width: 88%; 
+  height: 60px;
+  background-color: var(--color-secundario);
+  border-radius: 30px;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+  z-index: 1;
+}
+
+.search-form {
+  width: 100%;
+  height: 100%;
+}
+
+.search-input-group {
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input-svg {
+  margin-right: 10px;
+}
+
+.search-input-btn {
+  width: 24px;
+  height: 24px;
+  color: var(--color-primario);
+}
+
+.search-input {
+  width: 100%;
+  font-size: 17px;
+  line-height: 36px;
+  color: var(--color-primario);
+  border: none;
+  outline: none;
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (max-width: 480px) {
+
+  .search-img.sc480 {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .search-img.sc768 {
+    opacity: 1;
+  }
+
+  .search-wrapper {
+    padding: 0 0rem .5rem;
+  }
+
+  .search-input {
+    font-size: 15px;
+  }
+
+  .search-form-box {
+    height: 56px;
+  }
+}
+
+
+@media (max-width: 1136px) {
+
+  .search-img.sc1024 {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 480px) {
+  
+  .search-form-box {
+    width: 91%;
+  }
+}
+
+@media (min-width: 768px) {
+  
+  .search-form-box {
+    width: 84%;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  
+  .search-form-box {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1136px) {
+
+  .search-img.sc1136 {
+    opacity: 1;
+  }
+
+    .search-form-box {
+    width: 70%;
+  }
+}
